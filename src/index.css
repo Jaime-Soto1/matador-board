@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Global Styles === */
+body,
+html,
+#root {
+  @apply bg-gray-950 text-neutral-200;
+}
+
+/* === Background Image === */
+.app-container {
+  @apply flex flex-col items-center justify-center min-h-screen p-4;
+  background-image: url('/MatadorBoard.jpg'); /* Served from /public */
+  background-size: cover;
+  background-position: center;
+}
+
+/* === Navbar === */
+.navbar-container {
+  @apply flex justify-between items-center w-full px-8 py-4 bg-black shadow-lg fixed top-0 left-0 z-50;
+}
+
+.navbar-logo {
+  @apply h-12 w-auto;
+}
+
+.navbar-links {
+  @apply flex space-x-8 text-gray-300 font-medium;
+}
+
+.navbar-links a:hover {
+  @apply text-red-500 underline;
+}
+
+/* === User Info === */
+.user-info {
+  @apply absolute top-28 right-4 text-right;
+}
+
+.logged-in-text {
+  @apply mb-2 font-medium text-black;
+}
+
+.user-email {
+  @apply font-semibold text-green-400;
+}
+
+/* === Logout Button === */
+.logout-button {
+  @apply px-6 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600 transition-all duration-300 mt-2;
+}
+
+/* === Welcome Section === */
+.welcome-section {
+  @apply text-center mt-24 mb-12 p-6 rounded-lg shadow-lg bg-black bg-opacity-50;
+}
+
+.welcome-title {
+  @apply text-4xl font-bold text-white mb-6;
+}
+
+.welcome-title .highlight {
+  @apply text-red-500;
+}
+
+.welcome-subtitle {
+  @apply text-lg font-medium text-white opacity-90;
+}
+
+/* === Login === */
+.login-container {
+  @apply mt-8 flex justify-center items-center;
+}
+
+/* === Kanban === */
+.kanban-container {
+  @apply mt-8;
+}
