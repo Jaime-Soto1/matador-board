@@ -1,22 +1,65 @@
-# React Kanban Board
+# Matador Board
 
-## Preview
+Matador Board is a full-stack Kanban-style document workflow application built with React, TypeScript, Express, and MySQL. The project was designed for a university-style approval process where users can manage boards, organize tasks, upload documents, and track document approval statuses.
 
-You can preview this project at: https://kanban-board-eed31.web.app/
+## Features
 
-## Description
+- Kanban board interface with draggable columns and tasks
+- Group board management
+- Board invitation workflow
+- User role handling for student/user and faculty-style permissions
+- Document upload system
+- Document status tracking: Pending, Approved, and Rejected
+- Document list with file preview support
+- React Router page navigation
+- Redux Toolkit state management
+- Express backend routes
+- MySQL database integration
 
-This project is developed with React.js with TypeScript.
-I have used Redux, TailwindCSS and dnd-kit library for drag and drop operations. And the redux state is persisted to localstorage.
+## Tech Stack
 
-## To Run the Code Locally
+**Frontend**
+- React
+- TypeScript
+- Vite
+- Redux Toolkit
+- React Router
+- Tailwind CSS
+- dnd-kit
 
-```
-git clone https://github.com/barishazar3431/react-kanban-board
+**Backend**
+- Node.js
+- Express
+- TypeScript
+- MySQL
+- Multer for file uploads
 
-cd desktop\comp 491\matadorboard local setup\react-kanban-board
+## Project Structure
 
-npm install
+```text
+src/
+  components/
+    KanbanBoard.tsx
+    KanbanColumn.tsx
+    KanbanTaskItem.tsx
+    Documents.tsx
+    DocumentList.tsx
+    Navbar.tsx
 
-npm run dev
-```
+  pages/
+    BoardView.tsx
+    GroupManagement.tsx
+    MyBoards.tsx
+
+  server/
+    server.ts
+    boardRoutes.ts
+    db.ts
+
+  store/
+    kanbanSlice.ts
+    index.ts
+
+  util/
+    kanbanUtils.ts
+    reduxHooks.ts
