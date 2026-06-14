@@ -75,3 +75,38 @@ src/
   util/
     kanbanUtils.ts
     reduxHooks.ts
+```
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Jaime-Soto1/matador-board.git
+cd matador-board
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file in the root directory with your local MySQL configuration:
+
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=matadorboard
+```
+
+Run the project:
+
+```bash
+npm run dev
+```
+
+## Notes
+
+This project was built as a senior design-style full-stack application focused on task management, document workflow, role-based access, group collaboration, and database-backed persistence.
