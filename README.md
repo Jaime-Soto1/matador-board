@@ -107,6 +107,6 @@ Run the project:
 npm run dev
 ```
 
-## Notes
+Note: Full backend/database functionality requires a local MySQL database and matching environment variables.
 
 This project was built as a senior design-style full-stack application focused on task management, document workflow, role-based access, group collaboration, and database-backed persistence.
