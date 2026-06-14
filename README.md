@@ -1,6 +1,16 @@
 # Matador Board
 
-Matador Board is a full-stack Kanban-style document workflow application built with React, TypeScript, Express, and MySQL. The project was designed for a university-style approval process where users can manage boards, organize tasks, upload documents, and track document approval statuses.
+Matador Board is a full-stack Kanban-style document workflow application built with React, TypeScript, Express, and MySQL. The project was designed for a university-style approval process where users can manage boards, organize tasks, upload documents, invite members, and track document approval statuses.
+
+## Project Purpose
+
+Matador Board was designed as a senior design-style workflow application for managing shared task boards and document approval processes. The goal was to create a system where users could organize tasks, collaborate through group boards, upload documents, and track approval statuses in one place.
+
+## My Role
+
+For this project, I helped organize the team's workflow, coordinate project responsibilities, and keep development moving toward the final application goals. I contributed to the database design and SQL work, including helping structure tables for users, boards, documents, columns, tasks, invites, and group board functionality.
+
+I also supported backend development by helping troubleshoot API routes, database connection issues, and data persistence problems between the React frontend, Express backend, and MySQL database. My work focused on making sure the system could save and retrieve board data, support document workflow features, and function reliably for returning users.
 
 ## Features
 
@@ -18,7 +28,8 @@ Matador Board is a full-stack Kanban-style document workflow application built w
 
 ## Tech Stack
 
-**Frontend**
+### Frontend
+
 - React
 - TypeScript
 - Vite
@@ -27,7 +38,8 @@ Matador Board is a full-stack Kanban-style document workflow application built w
 - Tailwind CSS
 - dnd-kit
 
-**Backend**
+### Backend
+
 - Node.js
 - Express
 - TypeScript
